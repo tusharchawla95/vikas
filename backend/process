@@ -1,0 +1,33 @@
+initialize our backend.
+
+Libraries needed for the project: 
+Express
+Mongo: Driver around MongoDB.
+Mongoose: create the right MongoDB objects.
+
+npm install --save express
+
+we create our server using express.
+
+create REST APIs using express.
+
+Shopping cart application
+
+Define classes
+
+Items/products
+cart/order
+user
+
+
+v1 
+
+I need to show my products on the website.
+
+GET /products/
+
+One particular product: 
+Get /product/:productId
+
+
+curl -X POST localhost:3000/products/v2 -H "Content-Type: application/json" -d '{"name": "Kissan Jam", "price":"50"}'
