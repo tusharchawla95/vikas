@@ -1,0 +1,42 @@
+.toolbar {
+  display: flex;
+  
+
+}
+.example-form {
+
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+    padding: 490px;
+   text-align: center;
+
+  
+  }
+  
+  .example-full-width {
+    width: 100%;
+
+    
+  }
+  
+  .search-bar {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    align-items: center;
+    width: max-content;
+
+
+
+  }
+
+  .search-bar input {
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+  }

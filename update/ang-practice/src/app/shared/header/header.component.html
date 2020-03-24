@@ -1,0 +1,25 @@
+<div class="toolbar">
+  <mat-toolbar>
+    <button mat-fab color = "primary" routerLink = "/home">
+       <mat-icon>dashboard</mat-icon>
+    </button>
+    <!-- <span class="example-icon"></span>
+    <mat-icon>{{iconTitle}}</mat-icon>
+    <span class="example-icon"></span>
+    {{pageTitle}} -->
+    <div class="search-bar">
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Search..">
+            </mat-form-field>
+
+          </form>
+    </div>
+
+    <span class="example-spacer"></span>
+    <button mat-fab color = "accent" routerLink="/settings">
+    <mat-icon matBadge="8" matBadgePosition="after" matBadgeColor="warn">shopping_cart</mat-icon> 
+    </button>
+
+</mat-toolbar>
+</div>

@@ -1,0 +1,63 @@
+
+<mat-grid-list class = "product-grid-list"  cols ="5" rowHeights="1:2" gutterSize="5px" style="margin: 10px;"> 
+<!-- <div class = "product-grid-list"> -->
+  <div *ngFor = "let product of products">
+    <mat-grid-tile class="example-tile">
+         <!-- <div class = "example-tile">     -->
+        <mat-card class="example-card">
+        <div class="card-header">
+        <mat-card-header>
+          <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        
+          <mat-card-title >
+            <div class="card-title">
+             <p>{{product.productTitle}}</p> 
+             <hr/>
+            </div>
+          </mat-card-title>
+          <mat-card-subtitle class="card-sub">{{product.productType}}</mat-card-subtitle>
+        </mat-card-header>
+  
+      </div>
+      <div class="img-cards">
+        <img mat-card-image [src]="product.productImage" [alt] = "product.name" >
+      </div>
+      <div class="card-content">
+        <mat-card-content>
+         
+            <p>{{product.brand}} {{product.name}}</p>
+
+            <div class="product-price">
+            <h2>{{product.price}}</h2>
+            </div>
+            <mat-divider></mat-divider>
+        </mat-card-content>
+
+      </div>  
+        <mat-card-actions>
+<!--           
+          <button class = "button1" mat-button (click) = "handleChange($event)">
+           <p *ngif = "isAdded; else elseBlock" >
+            <p>hi</p>
+         
+            <ng-template #elseBlock>
+              <p>bye</p>
+            </ng-template>
+          </div> -->
+          <!-- Add
+          </button> --> 
+
+          <div [class]="product.buttonColour" class = "hi"> 
+            <button mat-button
+           (click)="handleChange(product.productId)"
+            >
+
+            <p> {{product.state}}</p>
+            </button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+      </mat-grid-tile>
+  </div>
+</mat-grid-list>
+<!-- </div> -->

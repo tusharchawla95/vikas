@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core(); // Adds pre-written css/scss code 
+
+$theme-primary: mat-palette($mat-orange);
+$theme-accent: mat-palette($mat-cyan, A200, A100, A400);
+$theme-warn:    mat-palette($mat-red);
+
+$my-theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+
+@include angular-material-theme($my-theme);

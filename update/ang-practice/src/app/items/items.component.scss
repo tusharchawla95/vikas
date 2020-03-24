@@ -1,0 +1,108 @@
+.main-class {
+  overflow: auto;
+}
+.product-grid-list {
+    display: flex;
+    text-align: center;
+  
+}
+.example-tile {
+    height: 100%;
+    justify-content: inherit;
+    align-items: center;
+    object-fit:contain;
+ 
+    
+}  
+.example-card {
+    width: 80%;
+    height: 100%;
+    margin: 5px auto;
+    justify-content: inherit;
+    align-items: center;
+    font-size:5vw;
+    object-fit: cover;
+  }
+
+  .card-header{
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(360deg,white, plum);
+    color: black;
+    padding: 40px ;
+    margin: inherit auto;
+    max-width: contain;
+    text-decoration:purple;
+    display: inline-block;
+        
+  }
+
+  .card-title {
+    
+    width: 100%;
+    color: black;
+    text-align: center;
+    color: white;
+    text-shadow: black;
+    font-size: 30px;
+    object-fit: cover;
+    padding: 10px 10px 0 0;
+    margin: 5%;
+
+  }
+
+  .card-sub {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card-content .product-price {
+
+    color: purple;
+
+
+  }
+
+
+
+  .img-cards{ 
+   
+    height: 200px; 
+  
+    } 
+    img{ 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    }
+
+    .box1 {
+      color: white;
+      background-color: red;
+    }
+  
+    .box2 {
+      color: white;
+      background-color: green;
+
+    }
+
+    .hi {
+      object-fit: contain;
+    }
+  
+
+   .hi button {
+  
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+    font-size: large;
+
+  }  
+
+   .button1 button p {
+    color: white;
+    font-size: large;
+  }
+
